@@ -29,6 +29,7 @@
  */
 	Router::connect('/', array('controller' => 'menu_categories', 'action' => 'home'));
 	Router::connect('/pizzas', array('controller' => 'menu_categories', 'action' => 'menu', 1)); // 1 is the MenuCategory.id for the pizzas category
+        Router::connect('/calzones', array('controller' => 'menu_categories', 'action' => 'menu', 2)); // 2 is the MenuCategory.id for the calzones category
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
