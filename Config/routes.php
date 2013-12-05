@@ -38,7 +38,7 @@
 	Router::connect('/desserts', array('controller' => 'menu_categories', 'action' => 'menu', 8)); // 2 is the MenuCategory.id for the calzones category
 	Router::connect('/cheesepizzas', array('controller' => 'menu_categories', 'action' => 'menu', 9)); // 2 is the MenuCategory.id for the calzones category
 	Router::connect('/newyorkstyle', array('controller' => 'menu_categories', 'action' => 'menu', 12)); // 2 is the MenuCategory.id for the calzones category/**
- * ...and connect the rest of 'Pages' controller's URLs.
+ /** and connect the rest of 'Pages' controller's URLs.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
