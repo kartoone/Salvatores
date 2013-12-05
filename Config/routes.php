@@ -28,9 +28,16 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'menu_categories', 'action' => 'home'));
-	Router::connect('/pizzas', array('controller' => 'menu_categories', 'action' => 'menu', 1));   // 1 is the MenuCategory.id for the pizzas category
-	Router::connect('/entrees', array('controller' => 'menu_categories', 'action' => 'menu', 4));  // 4 is the MenuCategory.id for the entrees category
-/**
+	Router::connect('/pizzas', array('controller' => 'menu_categories', 'action' => 'menu', 1)); // 1 is the MenuCategory.id for the pizzas category
+	Router::connect('/calzones', array('controller' => 'menu_categories', 'action' => 'menu', 2)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/appetizers', array('controller' => 'menu_categories', 'action' => 'menu', 3)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/entrees', array('controller' => 'menu_categories', 'action' => 'menu', 4)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/salads', array('controller' => 'menu_categories', 'action' => 'menu', 5)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/subs', array('controller' => 'menu_categories', 'action' => 'menu', 6)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/childrens', array('controller' => 'menu_categories', 'action' => 'menu', 7)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/desserts', array('controller' => 'menu_categories', 'action' => 'menu', 8)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/cheesepizzas', array('controller' => 'menu_categories', 'action' => 'menu', 9)); // 2 is the MenuCategory.id for the calzones category
+	Router::connect('/newyorkstyle', array('controller' => 'menu_categories', 'action' => 'menu', 12)); // 2 is the MenuCategory.id for the calzones category/**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
