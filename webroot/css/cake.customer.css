@@ -76,6 +76,8 @@ p {
 /** Layout **/
 #container {
 	text-align: left;
+        width:1000px;
+        margin:0 auto;
 }
 
 #header{
@@ -506,8 +508,8 @@ p.error em {
 
 /* Buttons and button links */
 input[type=submit],
-.actions ul li a,
-.actions a {
+.actions ul li a
+{
 	font-weight:normal;
 	padding: 4px 8px;
 	background: #dcdcdc;
