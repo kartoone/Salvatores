@@ -31,6 +31,39 @@ class MenuItemsController extends AppController {
                 echo json_encode($menuitems);
                 exit;
 	}
+       
+        
+        public function m_desserts(){
+            $this->MenuItem->recursive = 0;
+            $menuitems = $this->MenuItem->find('all', array(
+    'conditions' => array('MenuCategory.title' => 'Desserts')));
+            echo json_encode($menuitems);
+                exit;
+        }
+		
+		public function m_subs(){
+            $this->MenuItem->recursive = 0;
+            $menuitems = $this->MenuItem->find('all', array(
+    'conditions' => array('MenuCategory.title' => 'Subs')));
+            echo json_encode($menuitems);
+                exit;
+        }
+		public function m_appetizers(){
+            $this->MenuItem->recursive = 0;
+            $menuitems = $this->MenuItem->find('all', array(
+    'conditions' => array('MenuCategory.title' => 'Appetizers')));
+            echo json_encode($menuitems);
+                exit;
+        }
+		public function m_kidsmenu(){
+            $this->MenuItem->recursive = 0;
+			$menu = "Children's Menu";
+            $menuitems = $this->MenuItem->find('all', array(
+			'conditions' => array('MenuCategory.title' => $menu )));
+            echo json_encode($menuitems);
+                exit;
+        }
+        
 
 /**
  * view method

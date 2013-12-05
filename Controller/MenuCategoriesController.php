@@ -62,6 +62,7 @@ class MenuCategoriesController extends AppController {
 		$this->MenuCategory->recursive = 0;
 		$this->set('menuCategories', $this->Paginator->paginate());
 	}
+        
 
 /**
  * view method
