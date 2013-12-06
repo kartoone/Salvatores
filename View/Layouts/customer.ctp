@@ -1,29 +1,9 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Salvatores Pizzeria: 
+		Salvatore's Pizzeria: 
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
@@ -37,16 +17,20 @@
 <body>
 	<div id="container">
 		<div id="header">
-                    <img src="http://salvatorespizzeria.com/Salvatores_Pizza_%26_Pasta/entrees_beef_or_port_files/Banner.png" />
-			<h1>Welcome to Salvatores Pizzeria</h1>
+                     <?php echo $this->Html->image('SalvatoresBanner.png'); ?>
+                    <div id="nav">
+                        <?php echo $this->element('navBar'); ?>
+                    </div>               		
 		</div>
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
                         <?php echo $this->element('menu'); ?>
+                        <?php echo $this->element('loginButtons'); ?>
+                        
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-                    &copy; 2013 Salvatores Pizzeria
+                    &copy; 2013 Salvatore's Pizzeria
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>

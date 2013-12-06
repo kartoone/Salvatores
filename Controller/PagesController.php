@@ -53,6 +53,7 @@ class PagesController extends AppController {
  * @return void
  */
 	public function display() {
+                $this->layout = 'customer';
 		$path = func_get_args();
 
 		$count = count($path);

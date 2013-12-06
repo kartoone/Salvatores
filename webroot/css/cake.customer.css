@@ -1,21 +1,4 @@
 @charset "utf-8";
-/**
- *
- * Generic CSS for CakePHP
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.webroot.css
- * @since         CakePHP(tm)
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
 
 * {
 	margin:0;
@@ -24,17 +7,17 @@
 
 /** General Style Info **/
 body {
-	background: #003d4c;
+	background: #800000;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
 	margin: 0;
 }
-a {
-	color: #003d4c;
-	text-decoration: underline;
-	font-weight: bold;
-}
+//a {
+	////color: #003d4c;
+	//text-decoration: underline;
+	//font-weight: bold;
+//}
 a:hover {
 	color: #367889;
 	text-decoration:none;
@@ -47,19 +30,19 @@ h1, h2, h3, h4 {
 	margin-bottom:0.5em;
 }
 h1 {
-	background:#fff;
+	//background:#fff;
 	color: #003d4c;
 	font-size: 100%;
 }
 h2 {
-	background:#fff;
+	//background:#fff;
 	color: #e32;
-	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+	font-family:'lucida grande','Gill Sans', helvetica, arial, sans-serif;
 	font-size: 190%;
 }
 h3 {
 	color: #2c6877;
-	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+	font-family:'lucida grande','Gill Sans', helvetica, arial, sans-serif;
 	font-size: 165%;
 }
 h4 {
@@ -81,7 +64,22 @@ p {
 }
 
 #header{
-	padding: 10px 20px;
+	padding: 10px;
+        //width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        
+}
+#nav {
+    background: #ee5f5b;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+.navBar table{
+	padding: 5px;
+        margin: 0 auto;
 }
 #header h1 {
 	line-height:20px;
@@ -101,7 +99,7 @@ p {
 	text-decoration: underline;
 }
 #content{
-	background: #fff;
+	background: #FAFAD2;
 	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
@@ -134,12 +132,15 @@ div.actions h3 {
 
 
 /** Tables **/
-table {
+/**table {
 	border-right:0;
 	clear: both;
-	color: #333;
+	//color: #333;
 	margin-bottom: 10px;
 	width: 100%;
+} **/
+tr {
+    display: block;
 }
 th {
 	border:0;
@@ -148,7 +149,7 @@ th {
 	padding:4px;
 }
 th a {
-	display: block;
+	//display: block;
 	padding: 2px 4px;
 	text-decoration: none;
 }
@@ -163,6 +164,23 @@ table tr td {
 	text-align: left;
 	vertical-align: top;
 	border-bottom:1px solid #ddd;
+}
+#navbar tr{
+    //display: inline-block;
+   
+}
+#red {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #000000;
+    font-family: Garamond, Futura, Tahoma, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px;   
+    background-color: olivedrab;
+}
+#red a {
+    text-decoration: none;
+    color: white;
 }
 table tr:nth-child(even) {
 	background: #f9f9f9;
@@ -508,7 +526,8 @@ p.error em {
 
 /* Buttons and button links */
 input[type=submit],
-.actions ul li a
+.actions ul li a,
+#login td
 {
 	font-weight:normal;
 	padding: 4px 8px;
@@ -540,8 +559,7 @@ input[type=submit],
 	text-decoration: none;
 }
 input[type=submit]:active,
-.actions ul li a:active,
-.actions a:active {
+.actions ul li a:active {
 	background: #eee;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#eee));
 	background-image: -webkit-linear-gradient(top, #dfdfdf, #eee);

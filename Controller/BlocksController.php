@@ -39,6 +39,20 @@ class BlocksController extends AppController {
 		$options = array('conditions' => array('Block.' . $this->Block->primaryKey => $id));
 		$this->set('block', $this->Block->find('first', $options));
 	}
+/**
+ * view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function aboutUs($id = null) {
+		if (!$this->Block->exists($id)) {
+			throw new NotFoundException(__('Invalid block'));
+		}
+		$options = array('conditions' => array('Block.' . $this->Block->primaryKey => $id));
+		$this->set('block', $this->Block->find('first', $options));
+	}
 
 /**
  * add method
