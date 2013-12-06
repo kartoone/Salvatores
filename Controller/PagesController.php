@@ -73,11 +73,4 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 		$this->render(implode('/', $path));
 	}
-        	public function aboutUs($id = null) {
-		if (!$this->Block->exists($id)) {
-			throw new NotFoundException(__('Invalid block'));
-		}
-		$options = array('conditions' => array('Block.' . $this->Block->primaryKey => $id));
-		$this->set('block', $this->Block->find('first', $options));
-	}
 }
