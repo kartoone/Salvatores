@@ -21,11 +21,13 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function index() {
+            $this->layout = 'customer';
 		$this->Location->recursive = 0;
 		$this->set('locations', $this->Paginator->paginate());
 	}
 
         public function m_locations(){
+            $this->layout = 'customer';
             $this->Location->recursive = 0;
 		
             $locations = $this->Location->find('all');
@@ -53,6 +55,7 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function add() {
+            $this->layout = 'customer';
 		if ($this->request->is('post')) {
 			$this->Location->create();
 			if ($this->Location->save($this->request->data)) {
@@ -72,6 +75,7 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+            $this->layout = 'customer';
 		if (!$this->Location->exists($id)) {
 			throw new NotFoundException(__('Invalid location'));
 		}
@@ -96,6 +100,7 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+            $this->layout = 'customer';
 		$this->Location->id = $id;
 		if (!$this->Location->exists()) {
 			throw new NotFoundException(__('Invalid location'));
