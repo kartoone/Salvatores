@@ -17,7 +17,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-                     <?php echo $this->element('SalvatoresBanner'); ?>
+                     <?php echo $this->element('SalvatoresBanner.png'); ?>
 			
 		</div>
 		<div id="content">
