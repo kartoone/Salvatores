@@ -5,8 +5,8 @@
 		<td id="red"><?php echo $this->Html->link((__('Menu')),array('controller'=>'locations')); ?>&nbsp;</td>
 		<td id="red"><?php echo $this->Html->link((__('Locations')),array('controller'=>'locations')); ?>&nbsp;</td>
 		<td id="red"><?php echo $this->Html->link((__('Reviews')),array('controller'=>'locations')); ?>&nbsp;</td>
-		<td id="red"><?php echo $this->Html->link((__('About Us')),array('controller'=>'blocks','action'=>'AboutUs')); ?>&nbsp;</td>
-		<td id="red"><?php echo $this->Html->link((__('Contact Us')),array('controller'=>'locations')); ?>&nbsp;</td>
+		<td id="red"><?php echo $this->Html->link((__('About Us')),array('controller'=>'pages','action'=>'aboutUs')); ?>&nbsp;</td>
+		<td id="red"><?php echo $this->Html->link((__('Contact Us')),array('controller'=>'pages')); ?>&nbsp;</td>
             </tr>
 	</table>
 </div>
