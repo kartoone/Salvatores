@@ -509,7 +509,7 @@ p.error em {
 /* Buttons and button links */
 input[type=submit],
 .actions ul li a,
-#login
+#login td
 {
 	font-weight:normal;
 	padding: 4px 8px;
