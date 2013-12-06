@@ -41,6 +41,10 @@ class MenuCategoriesController extends AppController {
  * @return void
  */
 	public function index() {
+                $this->layout = 'customer';
+	}
+
+        public function index_backoffice() {
             $this->layout = 'customer';
 		$this->MenuCategory->recursive = 0;
 		$this->set('menuCategories', $this->Paginator->paginate());
@@ -108,7 +112,7 @@ class MenuCategoriesController extends AppController {
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
+	public function edit($id = null) { 
 		if (!$this->MenuCategory->exists($id)) {
 			throw new NotFoundException(__('Invalid menu category'));
 		}
