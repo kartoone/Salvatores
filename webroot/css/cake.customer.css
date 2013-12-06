@@ -24,7 +24,7 @@
 
 /** General Style Info **/
 body {
-	background: #2d6324;
+	background: #1F7970;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
 	margin-bottom:0.5em;
 }
 h1 {
-	background:#2d6324;
+	background:#fff;
 	color: #003d4c;
 	font-size: 100%;
 }
