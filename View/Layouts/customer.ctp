@@ -23,6 +23,7 @@
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
                         <?php echo $this->element('menu'); ?>
+                        <?php echo $this->element('loginButtons'); ?>
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
