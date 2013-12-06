@@ -9,6 +9,7 @@
             foreach ($menuItems as $item) {
                 echo $item['MenuItem']['title'] . '       ' . $item['MenuItem']['price']."\n";
                  echo "<br />";
+                 echo "<br />";
             }  
           }
     ?>
