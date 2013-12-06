@@ -46,11 +46,12 @@ class UsersController extends AppController {
  * @return void
  */
 	public function add() {
+            $this->layout = 'customer';
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'home'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
@@ -105,4 +106,20 @@ class UsersController extends AppController {
 		$this->Session->setFlash(__('User was not deleted'));
 		return $this->redirect(array('action' => 'index'));
 	}
+        
+        public function login() {
+            $this->layout = 'customer';
+            if ($this->request->is('post')) {
+                $users = $this->User->find('all', array('conditions' => array("username='{$this->request->data['User']['username']}'", "password='{$this->request->data['User']['password']}'")));
+                if (count($users) > 0) {
+                    $this->Session->setFlash('valid username password: you are in!');
+                    $this->Session->write('username',$this->request->data['User']['username']);
+                    $this->Session->write('userid',$users[0]['User']['id']);
+                    $this->set('currentUser',$this->request->data['User']['username']);
+                    $this->redirect(array('controller'=>'inventories','action'=>'shop'));
+                } else {
+                    $this->Session->setFlash('invalid, try again');
+                }
+            }
+        }
 }
