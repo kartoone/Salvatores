@@ -25,6 +25,13 @@ class LocationsController extends AppController {
 		$this->set('locations', $this->Paginator->paginate());
 	}
 
+        public function m_locations(){
+            $this->Location->recursive = 0;
+		
+            $locations = $this->Location->find('all');
+            echo json_encode($locations);
+                exit;
+        }
 /**
  * view method
  *

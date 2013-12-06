@@ -34,10 +34,13 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     
+    var $menuCategories;
+    
     public function beforeFilter() {
         $this->loadModel('MenuCategory');
         $this->MenuCategory->recursive = 0;
-        $this->set('menuCategories', $this->MenuCategory->find('all',array('conditions'=>array('MenuCategory.parent_id IS NULL'),'order'=>array('MenuCategory.order'))));            
+        $this->menuCategories = $this->MenuCategory->find('all',array('conditions'=>array('MenuCategory.parent_id IS NULL'),'order'=>array('MenuCategory.order')));
+        $this->set('menuCategories', $this->menuCategories);            
     }
     
 }
