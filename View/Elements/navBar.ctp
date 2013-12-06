@@ -1,4 +1,4 @@
-<div class="actions" id="navBar">
+<div class="navBar" id="navBar">
 	<table cellpadding="0" cellspacing="0">
             <tr>
 		<td id="red"><?php echo $this->Html->link((__('Home')),'webroot/index.php'); ?>&nbsp;</td>
