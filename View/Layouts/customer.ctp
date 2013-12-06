@@ -18,7 +18,7 @@
 	<div id="container">
 		<div id="header">
                     <img src="http://salvatorespizzeria.com/Salvatores_Pizza_%26_Pasta/entrees_beef_or_port_files/Banner.png" />
-			<h1>Welcome to Salvatore's Pizzeria</h1>
+			
 		</div>
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
