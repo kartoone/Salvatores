@@ -23,7 +23,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Salvatores Pizzeria: 
+		Salvatore's Pizzeria: 
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
