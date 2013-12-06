@@ -24,7 +24,7 @@
 
 /** General Style Info **/
 body {
-	background: #1F7970;
+	background: #800000;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -101,7 +101,7 @@ p {
 	text-decoration: underline;
 }
 #content{
-	background: #fff;
+	background: #FAFAD2;
 	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
