@@ -17,8 +17,10 @@
 <body>
 	<div id="container">
 		<div id="header">
-                     <?php echo $this->Html->image('SalvatoresBanner.png'); ?>	
-                     <?php echo $this->element('navBar'); ?>		
+                     <?php echo $this->Html->image('SalvatoresBanner.png'); ?>
+                    <div id="nav">
+                        <?php echo $this->element('navBar'); ?>
+                    </div>               		
 		</div>
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>

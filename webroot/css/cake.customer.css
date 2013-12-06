@@ -70,6 +70,13 @@ p {
         text-align: center;
         
 }
+#nav {
+    background: #ee5f5b;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
 .navBar table{
 	padding: 5px;
         margin: 0 auto;
@@ -173,7 +180,7 @@ table tr td {
 }
 #red a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 table tr:nth-child(even) {
 	background: #f9f9f9;
