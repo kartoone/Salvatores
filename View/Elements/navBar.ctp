@@ -1,5 +1,5 @@
 <div class="navBar" id="navBar">
-	<table cellpadding="0" cellspacing="0">
+	<table>
             <tr>
 		<td id="red"><?php echo $this->Html->link((__('Home')),array('controller'=>'menu_categories','action'=>'home')); ?>&nbsp;</td>
 		<td id="red"><?php echo $this->Html->link((__('Menu')),array('controller'=>'menu_categories', 'action'=>'index')); ?>&nbsp;</td>

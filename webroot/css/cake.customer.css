@@ -62,13 +62,16 @@ p {
         width:1000px;
         margin:0 auto;
 }
-.navBar {
-    float: left;
-}
 
 #header{
-	padding: 20px 20px;
-        width: 665px;
+	padding: 10px;
+        //width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        
+}
+.navBar table{
+	padding: 5px;
         margin: 0 auto;
 }
 #header h1 {
@@ -156,13 +159,13 @@ table tr td {
 	border-bottom:1px solid #ddd;
 }
 #navbar tr{
-    display: inline-block;
+    //display: inline-block;
    
 }
 #red {
     padding: 10px;
     margin: 10px;
-    //border: 2px solid #000000;
+    border: 2px solid #000000;
     font-family: Garamond, Futura, Tahoma, sans-serif;
     font-size: 20px;
     border-radius: 5px 5px;   
