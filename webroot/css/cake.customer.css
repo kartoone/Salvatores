@@ -13,11 +13,11 @@ body {
 	font-size:90%;
 	margin: 0;
 }
-a {
-	color: #003d4c;
-	text-decoration: underline;
-	font-weight: bold;
-}
+//a {
+	////color: #003d4c;
+	//text-decoration: underline;
+	//font-weight: bold;
+//}
 a:hover {
 	color: #367889;
 	text-decoration:none;
@@ -119,13 +119,13 @@ div.actions h3 {
 
 
 /** Tables **/
-table {
+/**table {
 	border-right:0;
 	clear: both;
-	color: #333;
+	//color: #333;
 	margin-bottom: 10px;
 	width: 100%;
-}
+} **/
 th {
 	border:0;
 	border-bottom:2px solid #555;
@@ -148,6 +148,23 @@ table tr td {
 	text-align: left;
 	vertical-align: top;
 	border-bottom:1px solid #ddd;
+}
+#navBar tr td{
+   
+}
+#red {
+    padding: 5px;
+    margin: 0 5px;
+    border: 2px solid #000000;
+    font-family: Garamond, Futura, Tahoma, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px;   
+    background-color: #003300;
+    color: red;
+}
+#red.actions a {
+    text-decoration: none;
+    color: orange;
 }
 table tr:nth-child(even) {
 	background: #f9f9f9;
@@ -526,8 +543,7 @@ input[type=submit],
 	text-decoration: none;
 }
 input[type=submit]:active,
-.actions ul li a:active,
-.actions a:active {
+.actions ul li a:active {
 	background: #eee;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#eee));
 	background-image: -webkit-linear-gradient(top, #dfdfdf, #eee);
