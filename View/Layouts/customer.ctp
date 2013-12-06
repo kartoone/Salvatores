@@ -17,8 +17,8 @@
 <body>
 	<div id="container">
 		<div id="header">
-                    <?php echo $this->Html->image('SalvatoresBanner.png'); ?>
-			<h1>Welcome to Salvatore's Pizzeria</h1>
+                     <?php echo $this->element('SalvatoresBanner'); ?>
+			
 		</div>
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
