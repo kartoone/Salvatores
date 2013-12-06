@@ -41,6 +41,7 @@ class MenuCategoriesController extends AppController {
  * @return void
  */
 	public function index() {
+            $this->layout = 'customer';
 		$this->MenuCategory->recursive = 0;
 		$this->set('menuCategories', $this->Paginator->paginate());
 	}
