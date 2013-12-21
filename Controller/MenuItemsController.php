@@ -39,6 +39,14 @@ class MenuItemsController extends AppController {
             echo json_encode($menuitems);
                 exit;
         }
+        
+        public function m_calzones(){
+            $this->MenuItem->recursive = 0;
+            $menuitems = $this->MenuItem->find('all', array(
+            'conditions' => array('MenuCategory.title' => 'Calzones')));
+            echo json_encode($menuitems);
+                exit;
+        }
        
         
         public function m_desserts(){
