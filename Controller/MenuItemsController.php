@@ -80,6 +80,43 @@ class MenuItemsController extends AppController {
                 exit;
         }
         
+          public function m_chickenentrees(){
+            $this->MenuItem->recursive = 0;
+                    
+            $menuitems = $this->MenuItem->find('all', array(
+                        'conditions' => array('MenuCategory.title' => 'Chicken Entrees' )));
+            echo json_encode($menuitems);
+                exit;
+          }
+          
+          public function m_vegetarianentrees(){
+            $this->MenuItem->recursive = 0;
+                    
+            $menuitems = $this->MenuItem->find('all', array(
+                        'conditions' => array('MenuCategory.title' => 'Vegetarian Entrees' )));
+            echo json_encode($menuitems);
+                exit;
+          }
+          
+           public function m_seafoodentrees(){
+            $this->MenuItem->recursive = 0;
+                  
+            $menuitems = $this->MenuItem->find('all', array(
+                        'conditions' => array('MenuCategory.title' => 'Seafood Entrees' )));
+            echo json_encode($menuitems);
+                exit;
+          }
+          
+           public function m_beeforporkentrees(){
+            $this->MenuItem->recursive = 0;
+                  
+            $menuitems = $this->MenuItem->find('all', array(
+                        'conditions' => array('MenuCategory.title' => 'Beef or Pork Entrees' )));
+            echo json_encode($menuitems);
+                exit;
+          }
+        
+        
 
 /**
  * view method
