@@ -58,7 +58,7 @@ class MenuCategoriesController extends AppController {
         public function m_entreesmenu(){
             $this->MenuCategory->recursive = 0;
             $entreecategories = $this->MenuCategory->find('all', array(
-            'conditions' => array('MenuCategory.parent' => 'Entrees')));
+            'conditions' => array('ParentMenuCategory.title' => 'Entrees')));
             echo json_encode($entreecategories);
                 exit;
         }
