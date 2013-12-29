@@ -63,8 +63,8 @@ if (!defined('APP_DIR')) {
  * The following line differs from its sibling
  * /app/webroot/index.php
  */
-//define('CAKE_CORE_INCLUDE_PATH', 'C:' . DS . 'cake' . DS . 'cakephp-cake2.4' . DS . 'lib');
-define('CAKE_CORE_INCLUDE_PATH', '/var/www/Salvatores/Cake/lib');
+define('CAKE_CORE_INCLUDE_PATH', 'C:' . DS . 'cake' . DS . 'cakephp-2.4.0' . DS . 'lib');
+//define('CAKE_CORE_INCLUDE_PATH', '/var/www/Salvatores/Cake/lib');
 
 /**
  * Editing below this line should NOT be necessary.
