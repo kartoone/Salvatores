@@ -1,8 +1,8 @@
-<div class="locations index">
+<div class="menuCategories index">
 	<h2><?php echo __('Locations'); ?></h2>
 	<tr>
 			
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			
 	</tr>
 	<?php foreach ($locations as $location): ?>
 	
