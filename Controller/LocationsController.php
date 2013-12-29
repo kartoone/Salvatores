@@ -34,6 +34,11 @@ class LocationsController extends AppController {
             echo json_encode($locations);
                 exit;
         }
+        
+        public function mobile_locations(){
+            $this->Location->recursive = 0;
+	    $this->set('locations', $this->Paginator->paginate());
+        }
 /**
  * view method
  *

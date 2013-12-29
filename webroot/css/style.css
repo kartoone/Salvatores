@@ -1,0 +1,137 @@
+body {
+	background-image: url(../images/wavegrid.png);
+	margin: 0;
+	font-family: 'NotoSans-Regular', sans-serif;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border-width:5px;
+	border-style:solid;
+	border-color:black;
+}
+
+
+#home {
+	text-align: center;
+}
+
+.header {
+	/*position:fixed;*/
+	color: #ffffff;
+	list-style-type: none;
+	margin-top: -16px;
+	display: block;
+	width: 100%;
+	height: 8%;
+	box-shadow: 0px 3px 1px #888888;
+	/*This is the gradient styling for the menu bar*/
+	background: #b8e1fc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8e1fc), color-stop(10%,#a9d2f3), color-stop(25%,#90bae4), color-stop(37%,#90bcea), color-stop(50%,#90bff0), color-stop(51%,#6ba8e5), color-stop(83%,#a2daf5), color-stop(100%,#bdf3fd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=0 ); /* IE6-9 */
+}
+
+.menuButtonLi {
+	
+	margin-left: 0;
+	display: inline;
+	text-decoration: none;
+}
+
+.menuButtonA {
+	font-size: 16px;
+	color: #ffffff;
+	display: inline;
+	list-style-type: none;
+	text-decoration: none;
+}
+.menuButtonA img {
+	padding:1em 1em 0em 1em;
+	border:none;
+
+}
+.menuButton li img{
+	border:none;
+	}
+#salvatorelogo{
+	border-style:ridge;
+	border-width:6px;
+	border-color:#007C73;
+}
+
+form {
+	text-align: center;
+	margin-left: 0 auto;
+	margin-left: 0 auto;
+}
+.homeselection {
+	list-style-type: none;
+	margin-top: 10%;
+}/*Takes away the bullets from the list that is on the menu page*/
+.buttonLi {
+	display: inline-block;
+}
+button{
+	width: 6em;
+	height: 3em;
+	-moz-box-shadow: inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #f5978e;
+	box-shadow: inset 0px 1px 0px 0px #f5978e;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background: -moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color: #f24537;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-indent: 0;
+	border: 1px solid #d02718;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #810e05;
+	color: #ffffff;
+	font-size: 14px;
+	display:block;
+	margin:0px auto;
+
+}
+.homeselection button {
+	width: 10em;
+	height: 10em;
+	-moz-box-shadow: inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #f5978e;
+	box-shadow: inset 0px 1px 0px 0px #f5978e;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background: -moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color: #f24537;
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-left-radius: 20px;
+	text-indent: 0;
+	border: 1px solid #d02718;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #810e05;
+	color: #ffffff;
+	font-size: 14px;
+	margin-right: 1em;
+	/*margin-left:1em;*/
+	margin-top: 1em;
+}
