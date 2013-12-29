@@ -1,9 +1,6 @@
 <div class="menuCategories index">
 	<h2><?php echo __('Locations'); ?></h2>
-	<tr>
-			
-			
-	</tr>
+	
 	<?php foreach ($locations as $location): ?>
 	
 		

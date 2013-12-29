@@ -36,6 +36,7 @@ class LocationsController extends AppController {
         }
         
         public function mobile_locations(){
+            $this->layout = 'customer';
             $this->Location->recursive = 0;
 	    $this->set('locations', $this->Paginator->paginate());
         }
