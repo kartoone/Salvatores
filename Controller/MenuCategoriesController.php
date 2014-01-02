@@ -37,7 +37,7 @@ class MenuCategoriesController extends AppController {
         }
     }
 
-        public function m_menu($category_id = null) {
+        public function mobile_menu($category_id = null) {
             $this->layout = 'customermobile';
             $category = $this->MenuCategory->read(null,$category_id);
             $this->set(compact('category'));
