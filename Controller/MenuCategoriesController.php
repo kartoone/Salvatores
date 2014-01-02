@@ -51,6 +51,10 @@ class MenuCategoriesController extends AppController {
             
         }
         
+        public function m_index() {
+        $this->layout = 'customermobile';
+    }
+        
         
         public function m_rootmenu() {
             echo json_encode($this->menuCategories);
