@@ -28,6 +28,7 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'menu_categories', 'action' => 'home'));
+        Router::connect('/mobilemenu', array('controller' => 'menu_categories', 'action' => 'mobile_menu'));
 	Router::connect('/menu', array('controller' => 'menu_categories', 'action' => 'index')); 
 	Router::connect('/pizzas', array('controller' => 'menu_categories', 'action' => 'menu', 1)); // 1 is the MenuCategory.id for the pizzas category
 	Router::connect('/calzones', array('controller' => 'menu_categories', 'action' => 'menu', 2)); // 2 is the MenuCategory.id for the calzones category
