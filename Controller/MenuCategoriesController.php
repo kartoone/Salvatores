@@ -37,16 +37,18 @@ class MenuCategoriesController extends AppController {
         }
     }
 
-        public function m_menu($category_id) {
+        public function m_menu($category_id = null) {
+            $this->layout = 'customermobile';
             $category = $this->MenuCategory->read(null,$category_id);
+            $this->set(compact('category'));
             $menuItems = $this->MenuCategory->MenuItem->find('all',array('conditions'=>array('MenuItem.menu_category_id='.$category_id)));
             if ($menuItems) {
-                echo json_encode($menuItems);
+                $this->set(compact($menuItems));
             } else {
-                $subCategories = $this->MenuCategory->find('all',array('conditions'=>array('MenuCategory.parent_id='.$category_id)));
-                echo json_encode($subCategories);
+                $subCategories = $this->MenuCategory->find('all', array('conditions' => array('MenuCategory.parent_id=' . $category_id)));
+                $this->set(compact('subCategories'));
             }
-            exit;
+            
         }
         
         
