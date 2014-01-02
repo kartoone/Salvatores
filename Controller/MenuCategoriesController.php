@@ -43,7 +43,7 @@ class MenuCategoriesController extends AppController {
             return $this->redirect(array('action' => 'm_index'));
             $category = $this->MenuCategory->read(null,$category_id);
             $this->set(compact('category'));
-            $menuItems = $this->MenuCategory->MenuItem->find('all',array('conditions'=>array('MenuItem.menu_category_id='.$category_id)));
+            $menuItems = $this->MenuCategory->MenuItem->find('all',array('conditions'=>array('MenuItem.menu_category_id=' . $category_id)));
             if ($menuItems) {
                 $this->set(compact($menuItems));
             } else {
