@@ -1,7 +1,7 @@
 <div class="menuCategories index">
     <?php if (isset($subCategories)) {
             foreach ($subCategories as $cat) { 
-                echo $this->Html->link($cat['MenuCategory']['title'],array('action'=>'menu',$cat['MenuCategory']['id']));
+                echo $this->Html->link($cat['MenuCategory']['title'],array('action'=>'mobile_menu',$cat['MenuCategory']['id']));
                 echo "<br />";
             }
           } else  {

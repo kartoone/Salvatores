@@ -39,6 +39,8 @@ class MenuCategoriesController extends AppController {
 
         public function mobile_menu($category_id = null) {
             $this->layout = 'customermobile';
+            if ($category_id == null)
+            return $this->redirect(array('action' => 'm_index'));
             $category = $this->MenuCategory->read(null,$category_id);
             $this->set(compact('category'));
             $menuItems = $this->MenuCategory->MenuItem->find('all',array('conditions'=>array('MenuItem.menu_category_id='.$category_id)));
