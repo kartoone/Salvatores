@@ -38,18 +38,19 @@ class MenuCategoriesController extends AppController {
     }
 
         public function mobile_menu($category_id = null) {
-            $this->layout = 'customermobile';
-            if ($category_id == null)
-            return $this->redirect(array('action' => 'm_index'));
-            $category = $this->MenuCategory->read(null,$category_id);
-            $this->set(compact('category'));
-            $menuItems = $this->MenuCategory->MenuItem->find('all',array('conditions'=>array('MenuItem.menu_category_id=' . $category_id)));
-            if ($menuItems) {
-                $this->set(compact($menuItems));
-            } else {
-                $subCategories = $this->MenuCategory->find('all', array('conditions' => array('MenuCategory.parent_id=' . $category_id)));
-                $this->set(compact('subCategories'));
-            }
+             $this->layout = 'customermobile';
+        if ($category_id == null)
+            return $this->redirect(array('action' => 'home'));
+        $category = $this->MenuCategory->read(null, $category_id);
+        $this->set(compact('category'));
+        $menuItems = $this->MenuCategory->MenuItem->find('all', array('conditions' => array('MenuItem.menu_category_id=' . $category_id)));
+        if ($menuItems) {
+            // this means there ARE items for this category (ignore sub-categories ... should not exist)
+            $this->set(compact('menuItems'));
+        } else {
+            $subCategories = $this->MenuCategory->find('all', array('conditions' => array('MenuCategory.parent_id=' . $category_id)));
+            $this->set(compact('subCategories'));
+        }
             
         }
         
