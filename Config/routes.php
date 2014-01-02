@@ -29,6 +29,16 @@
  */
 	Router::connect('/', array('controller' => 'menu_categories', 'action' => 'home'));
         Router::connect('/mobilemenu', array('controller' => 'menu_categories', 'action' => 'm_index'));
+        Router::connect('/mobile/pizzas', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 1));//
+        Router::connect('/mobile/calzones', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 2));//
+        Router::connect('/mobile/appetizers', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 3));//
+        Router::connect('/mobile/entrees', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 4));//
+        Router::connect('/mobile/salads', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 5));//
+        Router::connect('/mobile/subs', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 6));//
+        Router::connect('/mobile/childrens', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 7));//
+        Router::connect('/mobile/desserts', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 8));//
+        Router::connect('/mobile/cheesepizzas', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 9));//
+        Router::connect('/mobile/newyorkstyle', array('controller' => 'menu_categories', 'action' => 'mobile_menu', 12));//
 	Router::connect('/menu', array('controller' => 'menu_categories', 'action' => 'index')); 
 	Router::connect('/pizzas', array('controller' => 'menu_categories', 'action' => 'menu', 1)); // 1 is the MenuCategory.id for the pizzas category
 	Router::connect('/calzones', array('controller' => 'menu_categories', 'action' => 'menu', 2)); // 2 is the MenuCategory.id for the calzones category
